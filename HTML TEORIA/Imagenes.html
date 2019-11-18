@@ -1,0 +1,65 @@
+﻿<html>
+	<head>
+		<title></title>
+	</head>
+	
+	<!-- formatos permitidos: .jpg  .gift  .png
+	
+		etiqueta <img/> que tiene dos propiedades obligatorias: src="ruta de la imagen: images/perro.jpg" y alt="poner descripccion corta de la imagen"
+		
+		<img width="500px" height=""/>
+	-->
+	
+	<!--VIDEO
+	
+	 introducir video youtube -> share(compartir) en el video de youtube y luego (insertar)--> 
+	
+	<!--MAPS
+	
+	 introducir mapa -> share(compartir) en el mapa y luego (insertar)--> 
+	
+	<!------------------
+	b-
+	-->
+	
+	<!-- MAPA DE IMAGENES
+	
+	es una imagen que tiene distintas areas y cada una de ellas es un enlace distinto
+	 **NO SE PUEDE CAMBIAR EL TAMAÑO DE LA IMAGEN DESPUES DE HACER EL MAPA
+	 
+	 Al imagen le añadiremos la propiedad usemap="" poniendo como valor una "#" y el nombre que usaremos.
+	 Con la etiqueta <map></map> crearemos un mapa al que pondremos name="".
+	 Dentro del <map> con la etiqueta <area></area> crearemos los distintos segmentos con la imagen. Dentrode esta etiqueta con la propiedad shape="" indicaremos la forma del area:
+		-circle
+		-rect
+		-poly
+	Luego con la propieda coords="" indicaremos las coordenadas. 
+	
+	Las coordenadas de un rectangulo son la esquina superior izquierda y la inferior derecha.
+	Las coordenadas de un circulo son centro, y el tamaño del radio.
+	Las coordenadas del poligono serian todas las esquinas y se tiene que hacer en el sentido de las agujas del reloj.
+	
+	En cada etiqueta area pondremos href="" y como valor, donde queremos que nos lleve.
+	Propiedades:
+		- Target=""
+		- Titlle="" Muestra texto al ponerte encima de ese area.
+	
+	-->
+	
+	<body>	
+	<!--
+	---------------
+	b--->
+	
+	<img src="ImagenesMapaImagenes.gif" alt="Mapa" usemap="#ImagenesMapaImagenes"/>
+		<map name="ImagenesMapaImagenes">
+			<area shape="circle" coords="120,105,25" href="www.marca.com"/>
+			<area shape="rect" coords="14,15,71,103" href="www.as.com"/>
+			<area shape="poly" coords="85,15,150,13,153,79,146,87,85,31" href="www.wikipedia.es"/>
+			<area shape="rect" coords="9,147,160,200" href="www.elpais.es"/>
+		</map>
+	
+	
+	
+	</body>
+</html>
